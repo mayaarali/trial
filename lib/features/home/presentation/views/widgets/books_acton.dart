@@ -33,7 +33,7 @@ class BooksAction extends StatelessWidget {
 
               // }
               //}
-              launchCustomUrl(context, bookModel.volumeInfo.previewLink!);
+              launchCustomUrl(context, 'bookModel.volumeInfo.previewLink');
             },
             backgroundColor: const Color(0xffEF8262),
             textcolor: Colors.white,
@@ -49,7 +49,7 @@ class BooksAction extends StatelessWidget {
   }
 
   String getText(BookModel bookModel) {
-    if (!(bookModel.volumeInfo.previewLink == null)) {
+    if (bookModel.volumeInfo.previewLink == null) {
       return 'Not Available';
     } else {
       return 'Preview';
