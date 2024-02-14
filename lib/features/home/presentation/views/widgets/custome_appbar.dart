@@ -15,17 +15,6 @@ class CustomAppBar extends StatelessWidget {
             height: 50,
           ),
           const Spacer(),
-          /* IconButton(
-              onPressed: () {
-                //  MagicRouter.goBack();
-                GoRouter.of(context).push('/searchview');
-              },
-              icon: const Icon(
-                //FontAwesomeIcons.magnifyingGlass
-                Icons.search,
-                size: 25,
-              ))
-              */
         ],
       ),
     );

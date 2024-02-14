@@ -6,7 +6,6 @@ import 'package:trail/features/home/data/repos/home_repo_imp.dart';
 import 'package:trail/features/home/presentation/manger/cubit/similar_books_cubit.dart';
 import 'package:trail/features/home/presentation/views/book_details_view.dart';
 import 'package:trail/features/home/presentation/views/home_view.dart';
-import 'package:trail/features/search/presentation/views/search.dart';
 import 'package:trail/features/splash/presentation/views/splash_view.dart';
 
 abstract class AppRouter {
@@ -21,10 +20,7 @@ abstract class AppRouter {
         path: '/homeview',
         builder: (context, state) => const HomeView(),
       ),
-      GoRoute(
-        path: '/searchview',
-        builder: (context, state) => const SearchView(),
-      ),
+
       /*   GoRoute(
         path: '/bookdetails',
         builder: (context, state) => const BookDetailsView(
